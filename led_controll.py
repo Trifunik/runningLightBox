@@ -1,9 +1,7 @@
 import smbus
 import time
 
-
 bus = smbus.SMBus(1)
-
 time.sleep(1)
 
 SLEEP = 0.1
@@ -142,13 +140,11 @@ def test_box():
     time.sleep(1)
     off_all_LEDs()
 
-    
+# Start simple test run
 off_all_LEDs()
 init_Box()
 
 test_box()
-
-
 
 off_all_LEDs()
 
